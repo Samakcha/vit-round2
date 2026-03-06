@@ -57,7 +57,7 @@ export default function PatientPage() {
                             <User size={24} />
                         </div>
                         <div>
-                            <h1 className="text-2xl font-bold text-neutral-900">Patient Dashboard</h1>
+                            <h1 className="text-2xl font-bold text-neutral-900">IntelliCareAI Patient</h1>
                             <p className="text-neutral-500">Welcome back, Patient {patientId.split('_')[1]}</p>
                         </div>
                     </div>
@@ -87,6 +87,7 @@ export default function PatientPage() {
                                     disabled={loading}
                                 />
                             </div>
+
                             <button
                                 type="submit"
                                 disabled={loading || !query.trim()}
@@ -127,8 +128,8 @@ export default function PatientPage() {
                                                 {q.intent || "General"}
                                             </span>
                                             <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${q.status === 'reviewed' ? 'bg-green-100 text-green-700' :
-                                                    q.status === 'critical_alert' ? 'bg-red-100 text-red-700 animate-pulse' :
-                                                        'bg-yellow-100 text-yellow-700'
+                                                q.status === 'critical_alert' ? 'bg-red-100 text-red-700 animate-pulse' :
+                                                    'bg-yellow-100 text-yellow-700'
                                                 }`}>
                                                 {q.status === 'reviewed' ? 'Answered' :
                                                     q.status === 'critical_alert' ? 'Reviewing Immediately' : 'Pending Review'}

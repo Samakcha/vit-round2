@@ -1,10 +1,12 @@
 from sqlalchemy.orm import Session
 from database.models import Query
 
-def create_query(db: Session, patient_id: str, query_text: str, intent: str, ai_draft: str, status: str = "pending"):
+def create_query(db: Session, patient_id: str, query_text: str, intent: str, ai_draft: str, spo2: int = None, bpm: int = None, status: str = "pending"):
     db_query = Query(
         patient_id=patient_id,
         query_text=query_text,
+        spo2=spo2,
+        bpm=bpm,
         intent=intent,
         ai_draft=ai_draft,
         status=status
