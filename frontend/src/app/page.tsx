@@ -8,7 +8,7 @@ export default function Home() {
                 {/* Header Section */}
                 <div className="text-center mb-16 space-y-6">
                     <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600 tracking-tight">
-                        Healthcare OS
+                        IntelliCareAI
                     </h1>
                     <p className="text-neutral-400 text-lg md:text-xl font-medium max-w-2xl mx-auto py-2">
                         Intelligent triage and secure communication platform connecting patients with medical professionals.
@@ -63,7 +63,7 @@ export default function Home() {
                 {/* Footer info */}
                 <div className="mt-16 text-center">
                     <p className="text-neutral-600 text-sm font-medium">
-                        System Status: <span className="text-green-500">All Services Operational</span> • VitalsPro Demo
+                        System Status: <span className="text-green-500">All Services Operational</span> • IntelliCareAI Demo
                     </p>
                 </div>
             </div>
