@@ -7,6 +7,8 @@ class Query(Base):
     id = Column(Integer, primary_key=True, index=True)
     patient_id = Column(String, index=True)
     query_text = Column(Text, nullable=False)
+    spo2 = Column(Integer, nullable=True)
+    bpm = Column(Integer, nullable=True)
     ai_draft = Column(Text)
     intent = Column(String)
     final_response = Column(Text)

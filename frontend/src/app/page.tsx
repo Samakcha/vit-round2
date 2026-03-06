@@ -47,7 +47,7 @@ export default function Home() {
                                 <Stethoscope size={36} className="text-indigo-500" />
                             </div>
 
-                            <h2 className="text-2xl font-bold text-white mb-3">Doctor Dashboard</h2>
+                            <h2 className="text-2xl font-bold text-white mb-3">IntelliCareAI Doctor</h2>
                             <p className="text-neutral-400 mb-8 font-medium">
                                 Review patient inquiries, edit AI-drafted responses, and manage critical alerts.
                             </p>

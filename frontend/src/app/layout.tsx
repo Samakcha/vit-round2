@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "IntelliCareAI",
+<<<<<<< HEAD
   description: "Intelligent triage and secure communication platform",
+=======
+  description: "Intelligent triage and secure communication platform.",
+>>>>>>> feat/real_time_data
 };
 
 export default function RootLayout({

@@ -2,7 +2,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from api.routes import router
 
+<<<<<<< HEAD
 app = FastAPI(title="IntelliCareAI Backend")
+=======
+app = FastAPI(title="IntelliCareAI API")
+>>>>>>> feat/real_time_data
 
 app.add_middleware(
     CORSMiddleware,
